@@ -106,17 +106,17 @@ std::string to_string(latitude::hemisphere h);
 /// @{
 /// User defined literal to construct latitudes.
 
-inline latitude operator"" _lat(long double value)
+inline latitude operator""_lat(long double value)
 {
 	return latitude{static_cast<double>(value)};
 }
 
-inline latitude operator"" _north(long double value)
+inline latitude operator""_north(long double value)
 {
 	return latitude{static_cast<double>(value)};
 }
 
-inline latitude operator"" _south(long double value)
+inline latitude operator""_south(long double value)
 {
 	return latitude{static_cast<double>(-value)};
 }
@@ -172,17 +172,17 @@ std::string to_string(longitude::hemisphere h);
 /// @{
 /// User defined literal to construct latitudes.
 
-inline longitude operator"" _lon(long double value)
+inline longitude operator""_lon(long double value)
 {
 	return longitude{static_cast<double>(value)};
 }
 
-inline longitude operator"" _east(long double value)
+inline longitude operator""_east(long double value)
 {
 	return longitude{static_cast<double>(value)};
 }
 
-inline longitude operator"" _west(long double value)
+inline longitude operator""_west(long double value)
 {
 	return longitude{static_cast<double>(-value)};
 }
